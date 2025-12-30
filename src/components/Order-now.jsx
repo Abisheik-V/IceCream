@@ -99,7 +99,7 @@ const OrderNow = () => {
             <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
                 <div className="container">
                     <Link className="navbar-brand" to="/">Jigar Icecream</Link>
-                    <Link to="/flavors" className="btn btn-sm btn-outline-light ms-auto" onClick={handleBackToMenu}>Back to Menu</Link>
+                    <Link to="/" className="btn btn-sm btn-outline-light ms-auto" onClick={handleBackToMenu}>Back to Menu</Link>
                 </div>
             </nav>
 
