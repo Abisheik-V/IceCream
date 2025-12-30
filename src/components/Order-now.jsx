@@ -47,7 +47,7 @@ const OrderNow = () => {
                     <h2 className="mb-3">Order Placed Successfully!</h2>
                     <p className="lead mb-4">Your delicious <strong>{selectedProduct.title}</strong> is on its way.</p>
                     <p className="text-muted">Order ID: #{Math.floor(Math.random() * 1000000)}</p>
-                    <button onClick={() => window.location.href = '/'} className="btn btn-custom btn-lg mt-3">Back to Home</button>
+                    <button onClick={() => navigate('/')} className="btn btn-custom btn-lg mt-3">Back to Home</button>
                 </div>
             </div>
         );
@@ -99,7 +99,7 @@ const OrderNow = () => {
             <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
                 <div className="container">
                     <Link className="navbar-brand" to="/">Jigar Icecream</Link>
-                    <Link to="/index" className="btn btn-sm btn-outline-light ms-auto" onClick={handleBackToMenu}>Back to Menu</Link>
+                    <Link to="/" className="btn btn-sm btn-outline-light ms-auto" onClick={handleBackToMenu}>Back to Menu</Link>
                 </div>
             </nav>
 
