@@ -20,6 +20,13 @@ body {
     background: var(--primary-cream);
     color: var(--dark-text);
     overflow-x: hidden;
+    /* Prevent horizontal scroll */
+    width: 100%;
+}
+
+html {
+    overflow-x: hidden;
+    width: 100%;
 }
 
 /* Custom Scrollbar */
@@ -1146,5 +1153,204 @@ h4,
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+/* =========================================
+   RESPONSIVE DESIGN SYSTEM (Site-wide)
+   ========================================= */
+
+/* --- Large Devices (Desktops, < 1200px) --- */
+@media (max-width: 1199px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+/* --- Medium Devices (Tablets, < 992px) --- */
+@media (max-width: 991px) {
+    .container {
+        max-width: 720px;
+    }
+
+    /* Navbar text adjustment */
+    .custom-navbar .nav-link {
+        margin-left: 10px;
+        font-size: 0.9rem;
+    }
+
+    /* Home: About Section */
+    .about-section .glass-panel {
+        padding: 3rem !important;
+    }
+
+    /* Franchise: Features Grid */
+    .feature-card {
+        margin-bottom: 20px;
+        /* Stacked spacing */
+    }
+}
+
+/* --- Small Devices (Landscape Phones, < 768px) --- */
+@media (max-width: 767px) {
+    .container {
+        max-width: 540px;
+    }
+
+    /* Typography Scaling */
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.75rem;
+    }
+
+    .display-3 {
+        font-size: 2.5rem;
+    }
+
+    .display-4 {
+        font-size: 2.2rem;
+    }
+
+    /* Home: Hero */
+    .hero-title {
+        font-size: 3rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+
+    /* Contact: Header */
+    .contact-wrapper h1.display-3 {
+        font-size: 2.2rem;
+    }
+}
+
+/* --- Extra Small Devices (Portrait Phones, < 576px) --- */
+@media (max-width: 576px) {
+
+    /* Global Container */
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    /* --- Typography Aggressive Scaling --- */
+    .hero-title {
+        font-size: 1.8rem;
+        word-wrap: break-word;
+        /* Ensure wrapping */
+    }
+
+    .jigar-brand {
+        font-size: 1.4rem;
+        /* Scale down brand */
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .display-3 {
+        font-size: 2rem;
+    }
+
+    .display-4 {
+        font-size: 1.8rem;
+    }
+
+    /* --- Home Page Specifics --- */
+    .hero-section {
+        background-attachment: scroll;
+        /* Disable parallax for performance/jitter */
+    }
+
+    .hero-content {
+        width: 100%;
+        padding: 0 15px;
+        /* Prevent text touching edges */
+    }
+
+    .flavor-card {
+        height: 280px;
+        /* Compact cards */
+    }
+
+    .card-front h3 {
+        font-size: 1.5rem;
+    }
+
+    .gallery-section img {
+        height: 150px;
+    }
+
+    /* Footer Alignment */
+    .footer-section {
+        text-align: center;
+    }
+
+    .social-icons {
+        justify-content: center;
+        display: flex;
+        margin-top: 1rem;
+    }
+
+    /* --- Login Page Specifics --- */
+    .login-page-wrapper {
+        padding: 60px 15px 30px;
+        /* Reduce padding */
+    }
+
+    .auth-card {
+        padding: 1.5rem;
+        /* Compact card */
+    }
+
+    .auth-toggle-wrapper {
+        margin-bottom: 1.5rem;
+    }
+
+    /* --- Contact Page Specifics --- */
+    .contact-card {
+        padding: 1.5rem;
+        margin-top: 2rem;
+    }
+
+    .animated-blob {
+        opacity: 0.3;
+        /* Reduce distraction */
+    }
+
+    /* --- Franchise Page Specifics --- */
+    .franchise-hero {
+        height: 60vh;
+        /* Shorter hero */
+    }
+
+    .franchise-hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .franchise-hero .lead {
+        font-size: 1.1rem;
+    }
+
+    .step-number {
+        width: 50px;
+        height: 50px;
+        font-size: 1.2rem;
+    }
+
+    /* --- Flavors Page Specifics --- */
+    .flavors-page-section .display-4 {
+        font-size: 2.5rem;
+        /* Title check */
     }
 }
