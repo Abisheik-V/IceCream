@@ -52,7 +52,7 @@ const Index = () => {
                 <div className="hero-content text-center" data-aos="zoom-in" data-aos-duration="1500">
                     <h1 className="hero-title text-3d">Scoops of Happiness</h1>
                     <p className="hero-subtitle">Premium Handcrafted Ice Cream</p>
-                    <a href="/flavors" className="btn btn-custom btn-lg mt-4 floating-btn">Taste the Magic</a>
+                    <Link to="/flavors" className="btn btn-custom btn-lg mt-4 floating-btn">Taste the Magic</Link>
                 </div>
             </section>
 
